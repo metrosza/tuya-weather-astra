@@ -1,4 +1,3 @@
-
 name: Sync Tuya Weather to Astra
 
 on:
@@ -29,3 +28,11 @@ jobs:
         TUYA_ACCESS_ID: ${{ secrets.TUYA_ACCESS_ID }}
         TUYA_ACCESS_SECRET: ${{ secrets.TUYA_ACCESS_SECRET }}
       run: python tuya_to_astra.py
+
+    - name: Commit and Push changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user.email "41898282+github-actions[bot]@://github.com"
+        git add weather.json
+        git commit -m "Automated update weather data" || exit 0
+        git push
