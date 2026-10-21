@@ -1,11 +1,11 @@
 [
     {
         "code": "temp_current",
-        "value": 266
+        "value": 261
     },
     {
         "code": "humidity_value",
-        "value": 56
+        "value": 60
     },
     {
         "code": "battery_percentage",
