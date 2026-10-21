@@ -1,11 +1,11 @@
 [
     {
         "code": "temp_current",
-        "value": 262
+        "value": 267
     },
     {
         "code": "humidity_value",
-        "value": 62
+        "value": 65
     },
     {
         "code": "battery_percentage",
@@ -81,11 +81,11 @@
     },
     {
         "code": "rain_1h",
-        "value": 0
+        "value": 2
     },
     {
         "code": "rain_24h",
-        "value": 132
+        "value": 134
     },
     {
         "code": "rain_rate",
