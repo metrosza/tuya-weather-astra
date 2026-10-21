@@ -1,4 +1,3 @@
-python
 import os
 import time
 import hmac
@@ -9,7 +8,6 @@ import json
 # ==================== [ CONFIGURATION FROM SECRETS ] ====================
 ACCESS_ID = os.environ.get("TUYA_ACCESS_ID")
 ACCESS_SECRET = os.environ.get("TUYA_ACCESS_SECRET")
-ASTRA_ENDPOINT_URL = os.environ.get("ASTRA_ENDPOINT_URL")
 DEVICE_ID = "a3e275b15e7bcd03f6rtj9"
 
 TUYA_BASE_URL = "https://tuyaeu.com" 
@@ -21,7 +19,6 @@ def generate_signature(client_id, secret, timestamp, access_token="", body=""):
     content_sha = hashlib.sha256(body.encode('utf-8')).hexdigest()
     string_to_sign = f"{http_method}\n{content_sha}\n\n{url_path}"
     message = client_id + access_token + str(timestamp) + string_to_sign
-    
     return hmac.new(secret.encode('utf-8'), message.encode('utf-8'), hashlib.sha256).hexdigest().upper()
 
 def get_access_token():
@@ -30,7 +27,6 @@ def get_access_token():
     content_sha = hashlib.sha256("".encode('utf-8')).hexdigest()
     string_to_sign = f"GET\n{content_sha}\n\n{url_path}"
     message = ACCESS_ID + str(timestamp) + string_to_sign
-    
     sign = hmac.new(ACCESS_SECRET.encode('utf-8'), message.encode('utf-8'), hashlib.sha256).hexdigest().upper()
     
     headers = {"client_id": ACCESS_ID, "sign": sign, "t": str(timestamp), "sign_method": "HMAC-SHA256"}
@@ -38,7 +34,7 @@ def get_access_token():
     result = response.json()
     return result["result"]["access_token"] if result.get("success") else None
 
-def fetch_weather_and_send_to_astra():
+def fetch_weather_and_save():
     token = get_access_token()
     if not token: return
         
@@ -51,10 +47,10 @@ def fetch_weather_and_send_to_astra():
     
     if weather_data.get("success"):
         payload = weather_data["result"]
-        print("➡️ Tuya Data:", json.dumps(payload))
-        astra_headers = {"Content-Type": "application/json"}
-        res = requests.post(ASTRA_ENDPOINT_URL, headers=astra_headers, json=payload)
-        print("✅ Astra Response Status:", res.status_code)
+        # เซฟข้อมูลล่าสุดลงในไฟล์ json ภายในคลัง GitHub
+        with open("weather.json", "w", encoding="utf-8") as f:
+            json.dump(payload, f, ensure_ascii=False, indent=4)
+        print("✅ ดึงและเซฟข้อมูล Tuya ลงไฟล์ weather.json สำเร็จ!")
 
 if __name__ == "__main__":
-    fetch_weather_and_send_to_astra()
+    fetch_weather_and_save()
