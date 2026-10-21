@@ -1,2 +1,114 @@
-{
-}
+[
+    {
+        "code": "temp_current",
+        "value": 277
+    },
+    {
+        "code": "humidity_value",
+        "value": 52
+    },
+    {
+        "code": "battery_percentage",
+        "value": 100
+    },
+    {
+        "code": "temp_unit_convert",
+        "value": "c"
+    },
+    {
+        "code": "windspeed_unit_convert",
+        "value": "mps"
+    },
+    {
+        "code": "pressure_unit_convert",
+        "value": "hpa"
+    },
+    {
+        "code": "rain_unit_convert",
+        "value": "mm"
+    },
+    {
+        "code": "bright_unit_convert",
+        "value": "klux"
+    },
+    {
+        "code": "temp_current_external",
+        "value": 343
+    },
+    {
+        "code": "humidity_outdoor",
+        "value": 61
+    },
+    {
+        "code": "temp_current_external_1",
+        "value": -600
+    },
+    {
+        "code": "humidity_outdoor_1",
+        "value": 0
+    },
+    {
+        "code": "temp_current_external_2",
+        "value": -600
+    },
+    {
+        "code": "humidity_outdoor_2",
+        "value": 0
+    },
+    {
+        "code": "temp_current_external_3",
+        "value": -600
+    },
+    {
+        "code": "humidity_outdoor_3",
+        "value": 0
+    },
+    {
+        "code": "atmospheric_pressture",
+        "value": 1008
+    },
+    {
+        "code": "pressure_drop",
+        "value": 1008
+    },
+    {
+        "code": "windspeed_avg",
+        "value": 26
+    },
+    {
+        "code": "windspeed_gust",
+        "value": 46
+    },
+    {
+        "code": "rain_1h",
+        "value": 0
+    },
+    {
+        "code": "rain_24h",
+        "value": 0
+    },
+    {
+        "code": "rain_rate",
+        "value": 0
+    },
+    {
+        "code": "uv_index",
+        "value": 1
+    },
+    {
+        "code": "dew_point_temp",
+        "value": 256
+    },
+    {
+        "code": "feellike_temp",
+        "value": 405
+    },
+    {
+        "code": "heat_index",
+        "value": 433
+    },
+    {
+        "code": "windchill_index",
+        "value": -400
+    }
+]
