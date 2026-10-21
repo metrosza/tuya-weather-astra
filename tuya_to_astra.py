@@ -50,8 +50,13 @@ def fetch_weather_and_save():
     
     if weather_data.get("success"):
         payload = weather_data["result"]
-        # คำสั่งสร้างไฟล์แบบปลอดภัยและแน่นอน
-        with open("weather.json", "w", encoding="utf-8") as f:
+        
+        # บังคับหาตำแหน่ง Root ของโปรเจกต์ใน GitHub เสมอ
+        current_dir = os.path.dirname(os.path.abspath(__file__))
+        file_path = os.path.join(current_dir, "weather.json")
+        
+        # สั่งสร้างไฟล์ลงตำแหน่งหน้าแรกเป๊ะๆ
+        with open(file_path, "w", encoding="utf-8") as f:
             json.dump(payload, f, ensure_ascii=False, indent=4)
         print("✅ ดึงและเซฟข้อมูล Tuya ลงไฟล์ weather.json สำเร็จ!")
     else:
