@@ -10,7 +10,7 @@ ACCESS_ID = os.environ.get("TUYA_ACCESS_ID")
 ACCESS_SECRET = os.environ.get("TUYA_ACCESS_SECRET")
 DEVICE_ID = "a3e275b15e7bcd03f6rtj9"
 #TUYA_BASE_URL = "https://openapi.tuyaeu.com"
-TUYA_BASE_URL = "https://openapi.tuyaeu.com"
+TUYA_BASE_URL = "https://openapi-sg.iotbing.com"
 #TUYA_BASE_URL = "https://openapi.tuyaus.com"
 # =========================================================================
 
