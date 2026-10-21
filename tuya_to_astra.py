@@ -87,7 +87,12 @@ def fetch_weather_and_save():
             payload = weather_data["result"]
             
             # บันทึกข้อมูลสถานะลงเป็นไฟล์ประเภท JSON ดิบ
-            with open("weather.json", "w", encoding="utf-8") as f:
+
+            current_dir = os.path.dirname(os.path.abspath(__file__))
+file_path = os.path.join(current_dir, "weather.json")
+
+with open(file_path, "w", encoding="utf-8") as f:
+    
                 json.dump(payload, f, ensure_ascii=False, indent=4)
             print("✅ ประสบความสำเร็จ: ดึงข้อมูลและอัปเดตไฟล์ weather.json เรียบร้อยแล้ว!")
         else:
