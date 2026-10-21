@@ -85,11 +85,11 @@
     },
     {
         "code": "rain_24h",
-        "value": 134
+        "value": 0
     },
     {
         "code": "rain_rate",
-        "value": 4
+        "value": 0
     },
     {
         "code": "uv_index",
