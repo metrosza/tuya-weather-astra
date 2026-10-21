@@ -2,7 +2,7 @@ name: Sync Tuya Weather to Astra
 
 on:
   schedule:
-    - cron: '04,13,17,23,34,46,52,57 * * * *'
+    - cron: '*/15 * * * *'
   workflow_dispatch:
 
 jobs:
