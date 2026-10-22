@@ -97,15 +97,15 @@
     },
     {
         "code": "dew_point_temp",
-        "value": 243
+        "value": 244
     },
     {
         "code": "feellike_temp",
-        "value": 302
+        "value": 304
     },
     {
         "code": "heat_index",
-        "value": 251
+        "value": 252
     },
     {
         "code": "windchill_index",
