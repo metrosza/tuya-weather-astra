@@ -33,11 +33,11 @@
     },
     {
         "code": "temp_current_external",
-        "value": 263
+        "value": 260
     },
     {
         "code": "humidity_outdoor",
-        "value": 94
+        "value": 95
     },
     {
         "code": "temp_current_external_1",
@@ -65,11 +65,11 @@
     },
     {
         "code": "atmospheric_pressture",
-        "value": 1007
+        "value": 1008
     },
     {
         "code": "pressure_drop",
-        "value": 1007
+        "value": 1008
     },
     {
         "code": "windspeed_avg",
@@ -97,15 +97,15 @@
     },
     {
         "code": "dew_point_temp",
-        "value": 252
+        "value": 251
     },
     {
         "code": "feellike_temp",
-        "value": 318
+        "value": 314
     },
     {
         "code": "heat_index",
-        "value": 263
+        "value": 260
     },
     {
         "code": "windchill_index",
