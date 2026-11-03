@@ -1,11 +1,11 @@
 [
     {
         "code": "temp_current",
-        "value": 260
+        "value": 261
     },
     {
         "code": "humidity_value",
-        "value": 68
+        "value": 69
     },
     {
         "code": "battery_percentage",
@@ -73,11 +73,11 @@
     },
     {
         "code": "windspeed_avg",
-        "value": 2
+        "value": 4
     },
     {
         "code": "windspeed_gust",
-        "value": 26
+        "value": 0
     },
     {
         "code": "rain_1h",
@@ -101,7 +101,7 @@
     },
     {
         "code": "feellike_temp",
-        "value": 373
+        "value": 379
     },
     {
         "code": "heat_index",
