@@ -1,7 +1,7 @@
 [
     {
         "code": "temp_current",
-        "value": 288
+        "value": 286
     },
     {
         "code": "humidity_value",
@@ -65,11 +65,11 @@
     },
     {
         "code": "atmospheric_pressture",
-        "value": 1010
+        "value": 1011
     },
     {
         "code": "pressure_drop",
-        "value": 1010
+        "value": 1011
     },
     {
         "code": "windspeed_avg",
