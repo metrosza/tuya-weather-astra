@@ -1,7 +1,7 @@
 [
     {
         "code": "temp_current",
-        "value": 292
+        "value": 269
     },
     {
         "code": "humidity_value",
@@ -37,7 +37,7 @@
     },
     {
         "code": "humidity_outdoor",
-        "value": 87
+        "value": 90
     },
     {
         "code": "temp_current_external_1",
@@ -97,15 +97,15 @@
     },
     {
         "code": "dew_point_temp",
-        "value": 257
+        "value": 262
     },
     {
         "code": "feellike_temp",
-        "value": 339
+        "value": 341
     },
     {
         "code": "heat_index",
-        "value": 335
+        "value": 339
     },
     {
         "code": "windchill_index",
