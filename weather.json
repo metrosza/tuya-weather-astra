@@ -1,7 +1,7 @@
 [
     {
         "code": "temp_current",
-        "value": 277
+        "value": 276
     },
     {
         "code": "humidity_value",
@@ -85,11 +85,11 @@
     },
     {
         "code": "rain_24h",
-        "value": 141
+        "value": 0
     },
     {
         "code": "rain_rate",
-        "value": 4
+        "value": 0
     },
     {
         "code": "uv_index",
