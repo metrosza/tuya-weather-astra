@@ -1,11 +1,11 @@
 [
     {
         "code": "temp_current",
-        "value": 286
+        "value": 276
     },
     {
         "code": "humidity_value",
-        "value": 61
+        "value": 53
     },
     {
         "code": "battery_percentage",
@@ -65,15 +65,15 @@
     },
     {
         "code": "atmospheric_pressture",
-        "value": 1011
+        "value": 1010
     },
     {
         "code": "pressure_drop",
-        "value": 1011
+        "value": 1010
     },
     {
         "code": "windspeed_avg",
-        "value": 0
+        "value": 3
     },
     {
         "code": "windspeed_gust",
