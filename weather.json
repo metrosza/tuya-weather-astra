@@ -1,11 +1,11 @@
 [
     {
         "code": "temp_current",
-        "value": 269
+        "value": 275
     },
     {
         "code": "humidity_value",
-        "value": 65
+        "value": 59
     },
     {
         "code": "battery_percentage",
@@ -33,11 +33,11 @@
     },
     {
         "code": "temp_current_external",
-        "value": 263
+        "value": 251
     },
     {
         "code": "humidity_outdoor",
-        "value": 77
+        "value": 84
     },
     {
         "code": "temp_current_external_1",
@@ -97,15 +97,15 @@
     },
     {
         "code": "dew_point_temp",
-        "value": 219
+        "value": 221
     },
     {
         "code": "feellike_temp",
-        "value": 306
+        "value": 294
     },
     {
         "code": "heat_index",
-        "value": 263
+        "value": 251
     },
     {
         "code": "windchill_index",
